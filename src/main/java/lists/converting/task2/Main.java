@@ -18,8 +18,7 @@ public class Main {
         letterList.add(new GreekLetter("Omega", 24));
         letterList.add(new GreekLetter("Alpha",  1));
 
-        Object[] objArray = new Object[letterList.size()];
-        letterList.toArray(objArray);
+        Object[] objArray = letterList.toArray();
 
         for (Object anObjArray : objArray) {
             System.out.println(anObjArray);
